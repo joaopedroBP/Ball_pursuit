@@ -1,2 +1,2 @@
 # Ball_pursuit
-A simple python program that calculates the point in time a robot will intercept a ball in a set trejectory
+O codigo em si do ora_bolas esta feito, só falta agora arrumar o do pygame pra fazer o display.
