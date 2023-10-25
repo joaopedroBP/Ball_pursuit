@@ -3,7 +3,7 @@ import math
 # Constants
 velocidade_robo = 2.8  # m/s
 acelercao_robo = 2.8  # m/s^2
-raio_interceptacao = 0.0943  # 9.43 em m 
+raio_interceptacao = 0.0943  # 9.43cm em m 
 
 #calcular a distância de um ponto até o outro 
 def distance(x1, y1, x2, y2):
