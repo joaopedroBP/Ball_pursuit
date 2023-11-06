@@ -9,13 +9,10 @@ from multiprocessing import Process
 def distance(x1, y1, x2, y2):
     return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-def temp():
+def temp(x_robo,y_robo):
     velocidade_robo = 2.8  # m/s
     acelercao_robo = 2.8  # m/s^2
     raio_interceptacao = 0.0943  # 9.43 em m 
-
-    x_robo = float(input("Enter the initial x position of the robot: "))
-    y_robo = float(input("Enter the initial y position of the robot: "))
 
     # lend o trajetoria da bola
     with open('ball_trajectory.txt', 'r') as file:
@@ -75,6 +72,10 @@ def matplotlib_plot():
     plt.show()
 
 if __name__ == "__main__":
+    
+    x_robo = float(input("Enter the initial x position of the robot: "))
+    y_robo = float(input("Enter the initial y position of the robot: "))
+
     # Create two separate processes for Pygame and Matplotlib
     pygame_process = Process(target=pygame_window)
     matplotlib_process = Process(target=matplotlib_plot)
